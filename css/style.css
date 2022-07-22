@@ -1026,9 +1026,11 @@
                 @media screen and (max-width: 600px) {
 
                     .subscribe {
-                        flex-direction: column
+                        flex-direction: column;
+                        padding: 0 20px;
 
                     } 
+                    .explore
                     .company-list {
                         width: 100%;
                         text-align: center;
@@ -1045,5 +1047,30 @@
 
 
                     }
+                    .top-sec {
+                        margin-top: 20px;
+                    }
+                    .main-destination {
+                        padding-top: 0;
+                        padding-bottom: 75px;
+                    }
+                    .travel-row {
+                        padding-top: 50px;
+                        padding-bottom: 0;
+                    }
+                    .main-trips {
+                        padding-top: 0;
+                    }
+                    .social-links li {
+                        margin: 0 10px;
+                    }
+                    .footer-top {
+                        padding-bottom: 0;
+                    }
+                    .copyright p {
+                        width: 100%;
+                        padding: 0 35px;
+                    }
+                    
                 }
 
