@@ -1091,6 +1091,10 @@
                         z-index: 1200;
                         /* top: 91px; */
                     }
+                    .navbar {
+                        padding: 5px 10px;
+          
+                    }
                     .main {
                         justify-content: center;
                         width: 100%;
