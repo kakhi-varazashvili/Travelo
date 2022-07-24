@@ -2,7 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");                
                 
                 
-                
+                   header {
+                        position: sticky;
+                        top:0;
+                        left: 0;
+                        z-index: 1200;
+                        /* top: 91px; */
+                    }
                 .flex {
                     display: flex;
                     justify-content: space-between;
@@ -77,6 +83,13 @@
                 .google-plus {
                     width: 9px;
                 }
+                .fa-instagram:hover, 
+                .fa-linkedin:hover, 
+                .fa-facebook:hover, 
+                .fa-google-plus:hover {
+                    color: #FF4A52;
+
+                }
                 .line {
                     background-color: #EAEAEA;
                     height: 30px;
@@ -137,8 +150,11 @@
                     margin: 0 auto;
                     color: #fff;
                     text-align: center;
+                    z-index: 100;
                 }
-
+                .carousel-control-prev, .carousel-control-next {
+                    z-index: 110;
+                }
                 .swiss-title {
                     font-family: "Nothing You Could Do", cursive;
                     font-size: 150px;
@@ -285,7 +301,7 @@
                     border: 1px solid #363E52;
                     padding-left: 15px;
                     border-radius: 5px;
-                    color: #fff;
+                    color: #aab1b7;
                     margin: 0 15px;
                 }
 
@@ -328,8 +344,7 @@
                 }
 
                 .image-div {
-                    max-width: 380px;
-                    width: 50%;
+                    max-width: 33.33333%;
                     /* margin: 1px; */
                     margin-bottom: 30px;
                     position: relative;
@@ -613,6 +628,7 @@
                 .enjoy {
                     display: block;
                     margin: 0 auto;
+                    text-align: center;
                 }
 
                 .travel-row {
@@ -897,13 +913,47 @@
                 .where-go {
                     padding: 0;
                 }
+                .pop-up {
+                    width: 84px;
+                    height: 84px;
+                    text-align: center;
+                    line-height: 84px;
+                    border-radius: 50%;
+                    background: #1ec6b6;
+                    display: inline-block;
+                    color: #fff;
+                    font-size: 17px;
+                    position: relative;
+                }
+                .pop-up::before{
+
+                    content: "";
+                    position: absolute;
+                    z-index: 0;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: #1ec6b6;
+                    border-radius: 50%;
+                    animation: pulse-border 1500ms ease-out infinite;
+                    left: 0;
+                    bottom: 0;
+                    z-index: -1;
+                }
+
+
+
+
 
                 @media screen and (max-width: 1350px) {
+                    .image-div {
+                        max-width: 33%;
+                    }
 
                     .line  {
                         display: none;
                     }
-                    .swiss-title {
+                    .swiss-title, .enjoy h3 {
                         font-size: 90px;
                     }
                     .where {
@@ -916,6 +966,7 @@
                 }
 
                 @media screen and (max-width: 1150px) {
+                    
 
                     .navbar-brand  {
                         display: none;
@@ -930,8 +981,17 @@
                         padding: 0 50px;
                         flex-wrap: wrap;
                     }
+
+                    .swiss-titl, .enjoy h3 {
+                        font-size: 70px;
+                    }
+                    .swiss a {
+                        padding: 10px 30px;
+                        font-size: 14px;
+                    }
                     .image-div {
-                        margin: 20px;
+                        max-width: 33%;
+                        /* margin: 20px; */
                     }
                     .trips {
                         flex-wrap: wrap;
@@ -943,14 +1003,38 @@
                     
                 }
 
-                @media screen and (max-width: 1000px) {
+                @media screen and (max-width: 992px) {
+                    .container {
+                        max-width: 760px;
+                    }
+                    .navbar {
+                        padding: 20px 10px;
+          
+                    }
+                    .travelo-logo {
+                        margin: 0;
+                    }
+                    .search-bt {
+                        padding: 10px 35px;
+                    }
+                    
+                    .swiss p,h1,a {
+                        margin: 0 auto;
+                    } 
+                    .swiss p {
+                        margin-bottom: 15px;
+                    }
+
+                    .search-logo {
+                        display: none;
+                    }
                     .where-go {
                         display: block;
                     }
                     .where-go {
                         flex-direction: column;
                         justify-content: center;
-                        text-align: center;
+                        text-align: left;
                         padding: 0 50px;
 
                         
@@ -964,13 +1048,20 @@
                     }
                      .main {
                         padding: 0;
+                        justify-content: center;
                     }
                     .image-div {
-                        margin: 10px;
+                        max-width: 45%;
+                        margin: 5px;
+                    }
+                    form {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
                     }
                     input, select {
                         display: block;
-                        width: 100%;
+                        width: 25%;
                         margin: 10px 0;
                         padding: 0 15px;
                     }
@@ -984,10 +1075,21 @@
 
 
 
-                @media screen and (max-width: 730px) {
+                @media screen and (max-width: 768px) {
+                    .container {
+                        max-width: 540px;
+                    }
+               
 
                     .main-container {
                         margin: 0 auto;
+                    }
+                    header {
+                        position: sticky;
+                        top:0;
+                        left: 0;
+                        z-index: 1200;
+                        /* top: 91px; */
                     }
                     .main {
                         justify-content: center;
@@ -998,7 +1100,9 @@
                         font-size: 40px;
                     }
                     .image-div {
-                        width: 100%;
+                        max-width: 100%;
+                        margin-top: 0px;
+                        margin-bottom: 30px;
                     }
                     .sub-footers {
                         display: block;
@@ -1009,28 +1113,100 @@
                         width: 100%;
                         margin: 30px auto;
                         text-align: center;
-                        
+                    }
+                    .subs-news {
+                        max-width: 100%;
+                    }
+                    .subscribe {
+                        flex-direction: column;
 
-
+                    }
+                    .subscribe input {
+                       max-width: 100%;
+                    }
+                    .subscribe-absolute {
+                        text-align: left;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                    .subscribe-btn {
+                        width: 100%;
+                    }
+                    .main-destination {
+                        padding-top: 60px;
+                        padding-bottom: 60px;
+                    }
+                    .destination {
+                        margin-top: 0;
+                    }
+                    .bottom-bg {
+                        padding: 100px 0;
+                    }
+                    .enjoy h3 {
+                        font-size: 50px;
+                    }
+                    .where-go {
+                        margin: 0 auto;
+                        padding: 0 15px;
+                    }
+                    form {
+                        display: block;
+                        width: 100%;
+                    }
+                    input, select {
+                        display: block;
+                        width: 100%;
+                        margin-bottom: 15px;
+                        padding: 0 15px;
+                    }
+                    .where {
+                        margin-bottom: 15px;
+                        font-size: 24px;
+                    }
+                    .destination {
+                        max-width: 100%;
                     }
                     .travel-row {
                         display: block;
                         margin: 0 auto;
+                        padding: 60px 0;
                         width: 100%;
                     }
                     .single-travel {
                         margin: 20px auto;
                     }
+                    .single-trip {
+                        margin: 0 auto 30px auto;
+                        max-width: 100%;
+
+                    }
+                    .single-trip img {
+                        border-radius: 5px ;
+                    }
+                    .sub-footer:nth-child(odd) {
+                        max-width: 100%;
+                        margin: 0 auto;
+                    }
+                    .sub-footer:nth-child(even) {
+                        max-width: 100%;
+                        margin: 0 auto;
+                    }
+                    .insta-images img {
+                        width: 30%;
+                    }
+                    .copyright {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
                 }
 
-                @media screen and (max-width: 600px) {
+                /* @media screen and (max-width: 600px) {
 
                     .subscribe {
                         flex-direction: column;
                         padding: 0 20px;
 
                     } 
-                    .explore
                     .company-list {
                         width: 100%;
                         text-align: center;
@@ -1046,6 +1222,11 @@
                         font-size: 12px;
 
 
+                    }
+
+
+                    .image-div {
+                        max-width: 90%;
                     }
                     .top-sec {
                         margin-top: 20px;
@@ -1072,5 +1253,5 @@
                         padding: 0 35px;
                     }
                     
-                }
+                } */
 
