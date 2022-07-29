@@ -192,7 +192,7 @@ li {
     text-transform: capitalize;
 }
 .bg-swiss {
-    background-image: url(images/swiss.jpg);
+    background-image: url(/images/swiss.jpg);
     height: 600px !important;
     width: 100%;
     background-position: center center;
@@ -201,7 +201,7 @@ li {
     /* z-index: 3000; */
 }
 .bg-australia {
-    background-image: url(images/australia.jpg);
+    background-image: url(/images/australia.jpg);
     height: 600px !important;
     width: 100%;
     background-position: center center;
@@ -210,7 +210,7 @@ li {
     /* z-index: 3000; */
 }
 .bg-indonesia {
-    background-image: url(images/indonesia.jpg);
+    background-image: url(/images/indonesia.jpg);
     height: 600px !important;
     width: 100%;
     background-position: center center;
