@@ -1089,7 +1089,22 @@ footer {
     margin: auto;
     color: #EAEAEA;
 }
+    .carousel-indicators li {
+    
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        opacity: 0.1;
+        background-color: #ff4a52;
+        display: inline-block;
+        z-index: 10;
+       
+      }
+      .show {
+        border: none;
+      }
 
+   
 
 
 
