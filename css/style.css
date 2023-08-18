@@ -1118,16 +1118,6 @@ footer {
 
 
 
-.where {
-    font-size: 24px;
-    color: #fff;
-    font-weight: 400;
-    margin-bottom: 0;
-}
-
-.where h3 {
-    font-size: 22px;
-}
 
 
 
@@ -1612,3 +1602,15 @@ footer {
                     }
                     
                 } */
+
+
+        .where {
+            font-size: 24px;
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        
+        .where h3 {
+            font-size: 22px;
+        }
