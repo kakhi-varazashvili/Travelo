@@ -331,12 +331,7 @@ li {
     text-transform: capitalize;
 }
 
-.where {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 400;
-    margin-bottom: 0;
-}
+
 
 input,
 select {
@@ -1123,7 +1118,12 @@ footer {
 
 
 
-
+.where {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 0;
+}
 
 
 
